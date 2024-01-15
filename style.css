@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.drop, .no-drop{
+  border: solid;
+  width: 30%;
+  height: 250px;
+  margin: 2%;
+}
+
+#boxes {
+  display: flex;
+}
+
+#subtract-savings, #savings-isa {
+  display: none;
+}
+
+#turn-isa-iff, #turn-isa-on {
+  margin: 2%;
+}
+
+
+body, h1, h2, p, button {
+  margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header, main, footer {
+  text-align: center;
+  padding: 30px;
+}
+
+.instructions {
+  margin-bottom: 20px;
+}
+
+button { 
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #EE1C2E;
+}
+
+#questions {
+  font-size: 20px;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: blue;
+  color: aliceblue;
+}
+
+#box-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#treasure-box, #open-box {
+  height: 300px;
+  margin: 20px;
+}
+
+#open-box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 250px;
+  margin: 10px;
+}
+
+#quiz-puzzle, #unlock {
+  margin-top: 25px;
+}
+
+#budget-puzzle {
+  margin-bottom: 25px;
+}

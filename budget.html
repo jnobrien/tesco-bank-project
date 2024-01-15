@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <a href="index.html">
+    <button id="quiz-puzzle">Home</button>
+  </a>
+  <h1>Savings Puzzle</h1>
+  <p><strong>Disclaimer</strong>: This budget game is a puzzle experience designed for entertainment purposes only and is not intended to simulate real-world financial scenarios.</p>
+  <h2>Objectives</h2>
+  <ol>
+    <li>The player will be able to accurately distinguish between needs and wants.</li>
+    <li>The player will be able to create a budget that aligns with Tesco Bank's recommendation.</li>
+  </ol>
+  <h2>How to Play</h2>
+  <ol>
+    <li>Click and drag items in the purchases area to the "Needs" or "Wants" box.</li>
+    <li>Use the buttons in the "Savings" box to increase or decrease your savings amount.</li>
+    <li>To solve the puzzle, meet your exact savings goal in exactly 10 paychecks.</li>
+  </ol>
+
+  <h2>The Puzzle</h2>
+  <p><em>Paycheck: 2000</em></p>
+  <p><em>Savings goal: 5000</em></p>
+  <p>Number of paychecks to reach goal: <span id="turns">0</span></p>
+  <p>Remaining paycheck to budget: <span id="budget-left">2000</span></p>
+  
+  <br>
+  
+  <div id="money-things">
+    <p ondrop="dropAdd(event)" ondragover="allowDrop(event)"><strong>Purchases</strong></p>
+  </div>
+
+  <div id="boxes">
+  
+    <div class="drop">
+      <p id="needs" ondrop="handleDrop(event)" ondragover="allowDrop(event)"><strong>Needs</strong>: <span id="needs-total">0</span> (<span id="needs-percent">0</span>%)</p>
+    </div>
+  
+    <div class="drop">
+      <p id="wants" ondrop="handleDrop(event)" ondragover="allowDrop(event)"><strong>Wants</strong>: <span id="wants-total">0</span> (<span id="wants-percent">0</span>%)</p>
+    </div>
+  
+    <div class="no-drop">
+      <p id="savings"><strong>Savings</strong>: <span id="savings-total">0</span> (<span id="savings-percent">0</span>%)</p>
+      <p id="savings-isa"><strong>Savings with ISA</strong>: <span id="isa-total">0</span></p>
+      <button id="add-savings">Add 50</button>
+      <button id="subtract-savings">Subtract 50</button>
+    </div>
+
+  </div>
+
+  <button id="isa-btn"><span id="isa-btn-text">Sign up for a Lifetime ISA</span></button>
+
+  <br>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

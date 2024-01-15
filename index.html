@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesco Treasure Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <h1>Tesco Bank Inspired Treasure Quest: Financial Freedom</h1>
+      <img src = "Treasure Quest logo.png" id="logo" alt = "logo">
+      <p>Money doesn't grow on trees...but that treasure chest sure looks like it might be full of gold! Only problem? It's locked. Use the two financial puzzles to determine the code to unlock the treasure chest and your financial freedom.</p>
+      <br>
+      <p>This game was created for a Code First Girls JavaScript Kickstarter course sponsored by Tesco Bank and uses Tesco Bank articles to inform the puzzles. However, this game is not affiliated with Tesco Bank.</p>
+    <section class="start-button">
+      <a href="games.html">
+        <button id="quiz-puzzle">Quiz Puzzle</button>
+      </a>
+      <br>
+      <a href="budget.html">
+        <button id="budget-puzzle">Budget Puzzle</button>
+      </a>
+    </section>
+
+    <div>
+      <p>The treasure appears to be locked with a combination consisting of 5 letters followed by 6 numbers (no spaces).</p>
+      <br>
+      <label for="code">Combination code:</label>
+      <input type="text" id="code" name="code" maxlength: 11 minlenght: 11>
+      <br>
+      <button id="unlock" onclick="checkCode()"><span id="unlock-btn">Unlock</span></button>
+    </div>
+    <div id="box-div">
+      <img src="treasure-chest.jpeg" id="treasure-box">
+      <img src=chest-open.jpeg id="open-box">
+    </div>
+      
+    </main>
+    <!-- <footer>
+    <p>© 2024 Tesco Financial Games</p>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
