@@ -45,7 +45,7 @@ const moneyThings = [
   },
   {
     "source": "Groceries",
-    "cost": 200,
+    "cost": 250,
   },
   {
     "source": "Gas and water",
@@ -71,8 +71,19 @@ const moneyThings = [
     "source": "Train tickets for a day trip",
     "cost": 100,
   },
+  {
+    "source": "Designer sunglasses",
+    "cost": 100,
+  },
+  {
+    "source": "New tech gadget",
+    "cost": 250,
+  },
+  {
+    "source": "Go to a cat cafe",
+    "cost": 50,
+  }
 ]
-
 
 //This locates the div in the HTML file where we want this information to go and adds a paragraph for each object in the array
 
@@ -176,6 +187,8 @@ function dropSubtract(event) {
         droppedElement.classList.add("wants");
       } 
   }
+
+  checkAnswer()
 }
 
 //This function handles when an item is dropped back in the purchases section to add it back to the total budget
@@ -232,6 +245,8 @@ function dropAdd(event) {
 
   } else {
   }
+
+  checkAnswer()
 }
 
 //This function changes the class name if purchase is moved between needs and wants
@@ -438,5 +453,19 @@ function handleLifetimeButton() {
 }
 
 handleLifetimeButton()
+
+//in progress
+
+function checkAnswer() {
+  const needs = document.getElementById("needs-percent");
+  const wants = document.getElementById("wants-percent");
+  const savings = document.getElementById("savings-percent");
+  const turns = document.getElementById("turns");
+
+  if (needs.innerText == "5" && wants.innerText == "5" && savings.innerText == "0" && turns.innerText == "10") {
+    console.log("you did it!")
+  } else {
+  }
+}
 
 // IANA'S FUNCTIONS

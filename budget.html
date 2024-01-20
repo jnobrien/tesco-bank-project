@@ -21,7 +21,7 @@
   </ol>
   <h2>How to Play</h2>
   <ol>
-    <li>Click and drag items in the purchases area to the "Needs" or "Wants" box.</li>
+    <li>Click and drag items in the purchases area to the "Needs" or "Wants" box, dropping the item when you see a plus sign. (Tip: the game works best if you drop it beneath the previous item in the category.)</li>
     <li>Use the buttons in the "Savings" box to increase or decrease your savings amount.</li>
     <li>To solve the puzzle, meet your exact savings goal in exactly 10 paychecks.</li>
   </ol>
@@ -34,13 +34,16 @@
   
   <br>
   
-  <div id="money-things">
-    <p ondrop="dropAdd(event)" ondragover="allowDrop(event)"><strong>Purchases</strong></p>
+  <div id="purchases">
+    <h3>Purchases</h3>
+    <div id="money-things" ondrop="dropAdd(event)" ondragover="allowDrop(event)">
+      <!-- <p ondrop="dropAdd(event)" ondragover="allowDrop(event)"></p> -->
+    </div>
   </div>
 
   <div id="boxes">
   
-    <div class="drop">
+    <div class="drop" id="needs-div">
       <p id="needs" ondrop="handleDrop(event)" ondragover="allowDrop(event)"><strong>Needs</strong>: <span id="needs-total">0</span> (<span id="needs-percent">0</span>%)</p>
     </div>
   
