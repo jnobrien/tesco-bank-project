@@ -6,8 +6,8 @@ html {
 .drop, .no-drop{
   border: solid;
   width: 30%;
-  height: 250px;
-  margin: 2%;
+  height: 400px;
+  margin: 10px;
 }
 
 #boxes {
@@ -18,24 +18,16 @@ html {
   display: none;
 }
 
-#turn-isa-iff, #turn-isa-on {
-  margin: 2%;
-}
 
-
-body, h1, h2, p, button {
+body, h1, h2, h3, p, button {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header, main, footer {
   text-align: center;
-  padding: 30px;
-}
-
-.instructions {
-  margin-bottom: 20px;
+  /* padding: 30px; */
 }
 
 button { 
@@ -54,13 +46,13 @@ button:hover {
   background-color: #EE1C2E;
 }
 
-#questions {
+/* #questions {
   font-size: 20px;
   padding: 10px 30px;
   text-align: center;
   background-color: blue;
   color: aliceblue;
-}
+} */
 
 #box-div {
   display: flex;
@@ -91,4 +83,11 @@ button:hover {
 
 #budget-puzzle {
   margin-bottom: 25px;
+}
+
+#money-things {
+  column-count: 3;
+  column-fill: balance;
+  padding-left: 2px;
+  width: 95%
 }
