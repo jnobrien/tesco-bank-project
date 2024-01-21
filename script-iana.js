@@ -1,9 +1,9 @@
 // IANA'S FUNCTIONS
 // Function to start the game and redirect to game.html
-function startGame() {
-    // Redirect to game.html
-    window.location.href = "game.html";
-}
+// function startGame() {
+//     // Redirect to game.html
+//     window.location.href = "game.html";
+// }
 
 
 
@@ -135,6 +135,8 @@ function checkAnswer(answerIndex) {
                 displayMessage("Congratulations! You completed the quiz. Your secret code word is MONEY.", "blue");
             }
         }, 2000);
+        const tipContainer = document.getElementById("tip-container");
+        tipContainer.textContent = "";
     } else {
         // Resposta incorreta
         displayMessage("Incorrect! Try again.", "red");
@@ -151,12 +153,12 @@ function checkAnswer(answerIndex) {
 
 
 
-function nextQuestion() {
-    enableOptionsButtons();
-    const tipContainer = document.getElementById("tip-container");
-    tipContainer.textContent = "";
-    displayQuestion();
-}
+// function nextQuestion() {
+//     enableOptionsButtons();
+//     const tipContainer = document.getElementById("tip-container");
+//     tipContainer.textContent = "";
+//     displayQuestion();
+// }
 
 
 
