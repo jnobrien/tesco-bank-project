@@ -78,9 +78,10 @@ button:hover {
   margin: 10px;
 }
 
-#quiz-puzzle, #unlock {
+/* #quiz-puzzle, #unlock, .home-btn {
   margin-top: 25px;
-}
+  display: block;
+} */
 
 #budget-puzzle {
   margin-bottom: 25px;
