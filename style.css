@@ -41,6 +41,12 @@ button {
   transition: background-color 0.3s ease;
   margin: 10px;
   display: block;
+  text-decoration: none;
+}
+
+.main-btn {
+  text-align: center;
+  margin: 10px auto;
 }
 
 button:hover {
