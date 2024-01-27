@@ -38,7 +38,7 @@ button {
   color: white;
   border: none;
   border-radius: 50px;
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
   margin: 10px;
   display: block;
   text-decoration: none;
@@ -49,8 +49,21 @@ button {
   margin: 10px auto;
 }
 
-button:hover {
+.main-btn a {
+  text-decoration: none;
+}
+
+button:hover, a:hover {
   background-color: #EE1C2E;
+  text-decoration: none;
+}
+
+#quiz-puzzle, .home-btn, #budget-puzzle {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* #questions {
@@ -84,10 +97,10 @@ button:hover {
   margin: 10px;
 }
 
-/* #quiz-puzzle, #unlock, .home-btn {
+#quiz-puzzle, #unlock, .home-btn {
   margin-top: 25px;
   display: block;
-} */
+}
 
 #budget-puzzle {
   margin-bottom: 25px;
